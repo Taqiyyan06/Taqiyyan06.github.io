@@ -1,0 +1,174 @@
+html {
+  position: relative;
+}
+
+body {
+  margin-bottom: 80px;
+}
+
+hr {
+  width: 30%;
+  border-top: 5px solid #999;
+}
+
+section {
+  min-height: 400px;
+}
+
+/* jumbotron Section */
+.jumbotron {
+  background-image: url('img/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0px -60px;
+  color: #eaeaea;
+  overflow: hidden;
+}
+
+.jumbotron img {
+    opacity: 0;
+    transform: translate(0, -40px);
+    width: 150px;
+    height: 150px;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0,0,1);
+    transition: 2s;
+}
+
+.jumbotron h1, .jumbotron p {
+    opacity: 0;
+    text-shadow: 0px 3px 20px rgba(0,0,1);
+    transform: translate(0, -40px);
+    transition: 2s;
+}
+
+.jumbotron h1.muncul, .jumbotron p.muncul,  .jumbotron img.muncul{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* akhir jumbotron */
+
+
+
+/* About Section */
+.kanan {
+  opacity: 0;
+  transform: translate(50px, 0) rotate(-15deg);
+  transition: 1s;
+}
+
+.kiri {
+  opacity: 0;
+  transform: translate(-50px, 0) rotate(15deg);
+  transition: 1s;
+}
+
+.kiri.muncul, .kanan.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+  text-align: justify;
+}
+
+/* akhir About */
+
+
+
+/* portofolio Section */
+.portofolio {
+  background-color: #eee;
+}
+
+
+
+.portofolio .box {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 2s;
+}
+
+.portofolio .box.start {
+  opacity: 1; 
+  transform: translate(0, 0px);
+  box-shadow : 0 3px 20px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+/* akhir portofolio */
+
+
+
+/* kontak Section */
+.kontak {
+  background-color: #eee;
+  padding: 30px 0;
+}
+
+.kontak .kontak-info {
+  margin-bottom: 20px;
+}
+
+
+.kontak .kontak-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #999;
+}
+
+.kontak .kontak-info address,
+.kontak .kontak-info p {
+  color: #000;
+}
+
+.kontak .kontak-info h5 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.kontak .garis {
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+}
+
+.kontak .contact-address,
+.kontak .contact-phone,
+.kontak .contact-email {
+  margin-bottom: 20px;
+}
+
+.kontak .kontak-info a {
+  color: #000;
+}
+
+.kontak .kontak-info a:hover {
+  color: grey;
+}
+
+.kontak .form input,
+.kontak .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+/* akhir kontak */
+
+
+
+/* footer Section */
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #333;
+  padding-top: 2%;
+} 
+
+footer p {
+  color: #aaa;
+  font-size: 1em;
+}
+/* akhir footer */
+
